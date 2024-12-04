@@ -19,10 +19,55 @@
 
 1. Clone this repository or download the source code.
 2. Build the programm using Go:
-```go
+```bash
 go build -o pdiddy
 ```
 
 3. Place the `pdiddy` binary in a directory in your `PATH` for easier use, such as `usr/local/bin`.
 
-4. ##
+
+## Usage
+
+Run `pdiddy <command>` with one of the following commands:
+
+1. `guestlist`
+List all system users on the machine.
+
+```bash
+pdiddy guestlist
+```
+
+2. `party`
+List all currently logged-in users (party attendees).
+```bash
+pdiddy party
+```
+
+3. `babyoil <user>`
+Apply babyoil to a user. This reduces the total babyoil in the house by 1 and keeps track of how many times the user has been babyoiled.
+```bash
+pdiddy babyoil <user>
+```
+
+4. `touch <user`
+Reset the babyoil usage for a specific user.
+```bash
+pdiddy touch <user>
+```
+
+5. `babyoilhouse`
+Display the remaining amount of babyoil in the house
+```bash
+pdiddy babyoilhouse
+```
+6. `buy <amount>`
+Buy more babyoil. Specify the amount to add to the house
+```bash
+pdiddy buy <amount>
+```
+
+7. `help`
+Show the help menu with availble commands and their descriptions
+```bash
+pdiddy help
+```
